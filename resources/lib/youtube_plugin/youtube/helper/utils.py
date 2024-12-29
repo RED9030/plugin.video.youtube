@@ -905,7 +905,7 @@ def update_video_items(provider, context, video_id_dict,
                 menu_items.separator(),
             ]
         else:
-            context_menu = []
+            context_menu = [menu_items.video_comments(context, video_id, video_name=title)]
 
         if available:
             context_menu.extend((
